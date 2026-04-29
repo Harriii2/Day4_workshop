@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Not Found</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .container {
+            text-align: center;
+            background: white;
+            padding: 60px 40px;
+            border-radius: 10px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+            max-width: 600px;
+        }
+        
+        .error-code {
+            font-size: 120px;
+            font-weight: bold;
+            color: #667eea;
+            margin-bottom: 20px;
+        }
+        
+        h1 {
+            font-size: 36px;
+            color: #333;
+            margin-bottom: 15px;
+        }
+        
+        p {
+            font-size: 18px;
+            color: #666;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+        
+        .button {
+            display: inline-block;
+            padding: 12px 30px;
+            background-color: #667eea;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+            margin: 10px;
+        }
+        
+        .button:hover {
+            background-color: #764ba2;
+        }
+        
+        .button.secondary {
+            background-color: #ddd;
+            color: #333;
+        }
+        
+        .button.secondary:hover {
+            background-color: #bbb;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="error-code">404</div>
+        <h1>Page Not Found</h1>
+        <p>Sorry, the page you are looking for doesn't exist or has been moved.</p>
+        <a href="/" class="button">Go Home</a>
+        <a href="javascript:history.back()" class="button secondary">Go Back</a>
+    </div>
+</body>
+</html>
